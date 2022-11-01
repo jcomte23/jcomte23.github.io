@@ -1,3 +1,13 @@
 .row{
     margin: 0%;
 }
+
+#Headboard{
+    background-color: #5ea3f5;
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
