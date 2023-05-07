@@ -42,20 +42,11 @@ body {
     min-height: 350px;
 }
 
-#Headboard .abs-center::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 #Headboard .abs-center>div {
     position: relative;
     z-index: 1;
     text-align: center;
-}
+} */
 
 #Headboard .lead {
     font-size: 1.4rem;
@@ -65,6 +56,15 @@ body {
 }
 
 
+#imgFoto {
+    box-sizing: border-box;
+    border-radius: 50%;
+    max-width: 250px;
+    margin-bottom: 2%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5) !important;
+    transform: scale(1.1) !important;
+}
 
 
 
