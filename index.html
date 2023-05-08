@@ -42,6 +42,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css" />
   <title>Jcomte23</title>
 </head>
@@ -171,14 +172,14 @@
                 trabajado, no puedo compartir públicamente los proyectos en los que he participado. Sin embargo, estoy
                 emocionado por presentar en mis proyectos personales.</h4>
               <div class="project-icons">
-                <i class="fa fa-laptop" aria-hidden="true"></i>
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-                <i class="fa fa-code" aria-hidden="true"></i>
+                <i class="bi bi-laptop"></i>
+                <i class="bi bi-tablet-fill"></i>
+                <i class="bi bi-code-square"></i>
               </div>
             </div>
-            
+
           </div>
-          <div class="card col-md-3" >
+          <div class="card col-md-3">
             <img src="img/logoPHP.png" class="card-img-top" alt="Ejemplo de proyecto">
             <div class="card-body">
               <h5 class="card-title">Proyecto en desarrollo</h5>
@@ -192,19 +193,9 @@
     </div>
   </section>
 
-  <section id="contactos">
-    <h1>Contactos</h1>
-    <form action="/contacto" method="post">
-      <div>
-        <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto">
-      </div>
-      <div>
-        <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" name="descripcion"></textarea>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
+
+  <section>
+
   </section>
 
 
@@ -224,15 +215,28 @@
     <div class="redes-sociales">
       <h3>Redes Sociales</h3>
       <ul>
-        <li><a href="https://twitter.com/tucuenta"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/tucuenta/"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/tucuenta"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/tucuenta"><i class="bi bi-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/tucuenta/"><i class="bi bi-linkedin"></i></a></li>
+        <li><a href="https://github.com/tucuenta"><i class="bi bi-github"></i></a></li>
       </ul>
     </div>
-    <div class="derechos">
-      <p>&copy; 2023 Jcomte23. Todos los derechos reservados.</p>
+    <div id="contactos">
+      <h3>Contactos</h3>
+      <form action="/contacto" method="post">
+        <div>
+          <input type="text" id="asunto" placeholder="Asunto" name="asunto">
+        </div>
+        <div>
+          <textarea id="descripcion" placeholder="descripcion" name="descripcion"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
+
   </footer>
+  <div class="derechos text-center bg-black">
+    <p>&copy; 2023 Jcomte23. Todos los derechos reservados.</p>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 body {
     font-family: "Times New Roman", Times, serif;
     display: flex;
@@ -138,52 +140,6 @@ body {
 
 
 
-
-
-
-
-#contactos {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-#contactos h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#contactos label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-
-#contactos input[type="text"],
-#contactos textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 1em;
-}
-
-#contactos button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-#contactos button[type="submit"]:hover {
-    background-color: #3e8e41;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -219,7 +175,6 @@ footer {
 
 .redes-sociales ul {
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -231,5 +186,6 @@ footer {
 }
 
 .derechos {
-    text-align: right;
+    color: #fff;
+    margin: 0;
 }
