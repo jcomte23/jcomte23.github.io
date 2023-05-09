@@ -139,14 +139,106 @@ body {
 }
 
 
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
+/* Footer */
+.footer {
+    background-color: #111;
     color: #fff;
-    padding: 20px;
+    padding: 1% 0;
+}
+
+/* Education section */
+
+
+/* Social media section */
+.redes-sociales h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales li {
+    margin: 0 10px;
+}
+
+.redes-sociales a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.redes-sociales a:hover {
+    color: #ccc;
+}
+
+/* Contact section */
+#contactos .footer-title {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.btn-primary {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+/* Footer copyright */
+.derechos {
+    background-color: #222;
+    color: #ccc;
+    padding: 10px 0;
     font-size: 14px;
+    text-align: center;
+}
+
+/* .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+    font-size: 16px;
 }
 
 .ubicacion,
@@ -188,4 +280,4 @@ footer {
 .derechos {
     color: #fff;
     margin: 0;
-}
+} */
