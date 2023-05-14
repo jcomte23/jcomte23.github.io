@@ -161,7 +161,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .redes-sociales li {
@@ -177,53 +177,6 @@ body {
     color: #ccc;
 }
 
-/* Contact section */
-#contactos .footer-title {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.footer-form {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.form-group {
-    margin-top: 10px;
-}
-
-.form-group:last-child {
-    margin-right: 0;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #fff;
-}
-
-.form-group textarea {
-    height: 100px;
-}
-
-.btn-primary {
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
 
 /* Footer copyright */
 .derechos {
@@ -233,51 +186,3 @@ body {
     font-size: 14px;
     text-align: center;
 }
-
-/* .footer {
-    background-color: #222;
-    color: #fff;
-    padding: 50px 0;
-    font-size: 16px;
-}
-
-.ubicacion,
-.educacion,
-.redes-sociales,
-.derechos {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.ubicacion h3,
-.educacion h3,
-.redes-sociales h3 {
-    margin-bottom: 10px;
-}
-
-.ubicacion p {
-    margin: 0;
-}
-
-.educacion ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.redes-sociales ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.redes-sociales a {
-    color: #fff;
-    font-size: 24px;
-}
-
-.derechos {
-    color: #fff;
-    margin: 0;
-} */
