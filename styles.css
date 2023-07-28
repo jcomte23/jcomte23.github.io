@@ -1,188 +1,111 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-
 body {
-    font-family: "Times New Roman", Times, serif;
-    display: flex;
-    flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
-    margin: 0%;
+  margin: 0%;
 }
 
 /* Estilos para la sección #Headboard */
 
-#Headboard {
-    background-color: #1a1a1a;
-    color: #fff;
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
-#Headboard h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 25px;
-    text-transform: uppercase;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-#Headboard p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-top: 25px;
-    margin-bottom: 0;
+.grow{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
 }
-
-#Headboard .img-fluid {
-    box-sizing: border-box;
+.grow:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+        -webkit-transform: scale3d(1.5, 1.5, 0.3);
+        -moz-transform: scale3d(1.5, 1.5, 0.3);
 }
-
-#Headboard .abs-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 350px;
-}
-
-#Headboard .abs-center>div {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-*/ #Headboard .lead {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    margin-top: 25px;
-    margin-bottom: 0;
-}
-
-#imgFoto {
-    box-sizing: border-box;
-    border-radius: 50%;
-    max-width: 250px;
-    margin-bottom: 2%;
-    border: 2px solid #fff;
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5) !important;
-    transform: scale(1.1) !important;
-}
-
-
-
 
 #skills {
-    background-color: #f5f5f5;
-    padding: 60px 0;
+  background-color: #f5f5f5;
+  padding: 60px 0;
 }
 
 #skills h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 50px;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #skills h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 #skills .card {
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #fff;
-    transition: transform 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
 #skills .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 #skills .card-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #skills .card-text {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
 }
 
 @media (max-width: 767px) {
-    #skills h2 {
-        font-size: 2rem;
-        margin-bottom: 40px;
-    }
+  #skills h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
 
-    #skills .card {
-        padding: 15px;
-    }
+  #skills .card {
+    padding: 15px;
+  }
 
-    #skills .card-title {
-        font-size: 1rem;
-    }
+  #skills .card-title {
+    font-size: 1rem;
+  }
 
-    #skills .card-text {
-        font-size: 0.9rem;
-    }
+  #skills .card-text {
+    font-size: 0.9rem;
+  }
 }
 
-
-/* Footer */
-.footer {
-    background-color: #111;
-    color: #fff;
-    padding: 1% 0;
-}
-
-/* Education section */
-
-
-/* Social media section */
-.redes-sociales h3 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.redes-sociales ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: left;
-}
-
-.redes-sociales li {
-    margin: 0 10px;
-}
-
-.redes-sociales a {
-    color: #fff;
-    font-size: 24px;
-}
-
-.redes-sociales a:hover {
-    color: #ccc;
-}
-
-
-/* Footer copyright */
-.derechos {
-    background-color: #222;
-    color: #ccc;
-    padding: 10px 0;
-    font-size: 14px;
-    text-align: center;
-}
