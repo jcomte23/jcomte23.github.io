@@ -41,15 +41,17 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous" defer></script>
+  <script src="js/app.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
   <title>Jcomte23</title>
 </head>
 
 <body>
-  <div class="relative bg-white overflow-hidden">
+
+  <header class="relative bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
         <div class="flex items-center pt-2 pl-4">
@@ -81,84 +83,72 @@
     <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 max-h-screen">
       <img class="h-56 w-full object-contain sm:h-72 md:h-96 lg:w-full lg:h-full" src="img/foto_Perfil_WEB.webp" alt="">
     </div>
-  </div>
+  </header>
 
-
-  <section id="skills" class="bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Habilidades</h2>
-      <div class="row">
-        <div class="row col-md-12">
-          <h3 class="mb-3">Backend</h3>
-          <div class="card mb-4 col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">PHP & Laravel</h4>
-              <p class="card-text">Experto - Lenguaje de programación popular para el desarrollo web backend y un
-                framework de PHP moderno y popular utilizado para el desarrollo de aplicaciones web y APIs.</p>
-            </div>
-          </div>
-          <br>
-          <div class="card mb-4 col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">C#/.NET</h4>
-              <p class="card-text">Intermedio - C# es un lenguaje de programación orientado a objetos de Microsoft para
-                crear aplicaciones en la plataforma .NET. Es popular para aplicaciones de escritorio, web y móviles, así
-                como para videojuegos y soluciones empresariales.</p>
-            </div>
-          </div>
-          <div class="card mb-4 col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">Unity</h4>
-              <p class="card-text">Intermedio - Motor de videojuegos popular para el desarrollo de juegos en 2D y 3D en
-                múltiples plataformas.</p>
-            </div>
+  <h2 id="habilidades" class="text-center mt-2">Mis principales Habilidades</h2>
+  <section class="content bg-white dark:bg-black">
+    <div class="gallery-container">
+      <div class="gallery pt-5">
+        <div class="card mb-4 col-md-4">
+          <div class="card-body">
+            <h4 class="card-title">PHP & Laravel</h4>
+            <p class="card-text">Experto - Lenguaje de programación popular para el desarrollo web backend y un
+              framework de PHP moderno y popular utilizado para el desarrollo de aplicaciones web y APIs.</p>
           </div>
         </div>
-        <div class="row col-md-12">
-          <h3 class="mb-3">Databases SQL</h3>
-          <div class="card mb-4 col-md-4">
-            <div class="card-body">
-              <h4 class="card-title">MySQL</h4>
-              <p class="card-text">Experto - Motor de base de datos relacional de código abierto ampliamente utilizado
-                en aplicaciones web y empresariales de mediana y gran escala.</p>
-            </div>
-          </div>
-          <div class="card mb-4 col-md-4">
-            <div class="card-body ">
-              <h4 class="card-title">SQL Server</h4>
-              <p class="card-text">Intermedio - Motor de base de datos relacional desarrollado por Microsoft. Es
-                ampliamente utilizado en empresas para el manejo de grandes volúmenes de datos y el soporte de
-                aplicaciones empresariales.</p>
-            </div>
-          </div>
-          <div class="card mb-4 col-md-4">
-            <div class="card-body ">
-              <h4 class="card-title">Oracle</h4>
-              <p class="card-text">Intermedio - Motor de base de datos relacional desarrollado por Oracle Corporation.
-                Es utilizado en empresas para el manejo de grandes volúmenes de datos y el soporte de aplicaciones
-                empresariales.</p>
-            </div>
+        <div class="card mb-4 col-md-4">
+          <div class="card-body">
+            <h4 class="card-title">C#/.NET</h4>
+            <p class="card-text">Intermedio - C# es un lenguaje de programación orientado a objetos de Microsoft para
+              crear aplicaciones en la plataforma .NET. Es popular para aplicaciones de escritorio, web y móviles, así
+              como para videojuegos y soluciones empresariales.</p>
           </div>
         </div>
-        <div class="row col-md-12">
-          <h3 class="mb-3">Frontend</h3>
-          <div class="card mb-4 col-md-6">
-            <div class="card-body">
-              <h4 class="card-title">HTML/CSS</h4>
-              <p class="card-text">Avanzado - Lenguajes utilizados para el desarrollo web front-end.</p>
-            </div>
+        <div class="card mb-4 col-md-4">
+          <div class="card-body">
+            <h4 class="card-title">Unity</h4>
+            <p class="card-text">Intermedio - Motor de videojuegos popular para el desarrollo de juegos en 2D y 3D en
+              múltiples plataformas.</p>
           </div>
-          <div class="card mb-4 col-md-6">
-            <div class="card-body">
-              <h4 class="card-title">JavaScript</h4>
-              <p class="card-text">Intermedio - Lenguaje de programación para el desarrollo web front-end y backend.</p>
-            </div>
+        </div>
+        <div class="card mb-4 col-md-4">
+          <div class="card-body">
+            <h4 class="card-title">MySQL</h4>
+            <p class="card-text">Experto - Motor de base de datos relacional de código abierto ampliamente utilizado
+              en aplicaciones web y empresariales de mediana y gran escala.</p>
+          </div>
+        </div>
+        <div class="card mb-4 col-md-4">
+          <div class="card-body ">
+            <h4 class="card-title">SQL Server</h4>
+            <p class="card-text">Intermedio - Motor de base de datos relacional desarrollado por Microsoft. Es
+              ampliamente utilizado en empresas para el manejo de grandes volúmenes de datos y el soporte de
+              aplicaciones empresariales.</p>
+          </div>
+        </div>
+        <div class="card mb-4 col-md-4">
+          <div class="card-body ">
+            <h4 class="card-title">Oracle</h4>
+            <p class="card-text">Intermedio - Motor de base de datos relacional desarrollado por Oracle Corporation.
+              Es utilizado en empresas para el manejo de grandes volúmenes de datos y el soporte de aplicaciones
+              empresariales.</p>
+          </div>
+        </div>
+        <div class="card mb-4 col-md-6">
+          <div class="card-body">
+            <h4 class="card-title">HTML/CSS</h4>
+            <p class="card-text">Avanzado - Lenguajes utilizados para el desarrollo web front-end.</p>
+          </div>
+        </div>
+        <div class="card mb-4 col-md-6">
+          <div class="card-body">
+            <h4 class="card-title">JavaScript</h4>
+            <p class="card-text">Intermedio - Lenguaje de programación para el desarrollo web front-end y backend.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <footer class="bg-dark mt-auto text-center text-white ">
     <div class="container p-4 pb-0">
@@ -169,12 +159,13 @@
         <i class="bi bi-linkedin"></i>
       </a>
       <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://twitter.com/jcomte23" role="button">
+      <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://twitter.com/jcomte23"
+        role="button">
         <i class="bi bi-twitter"></i>
       </a>
       <!-- GitHub -->
-      <a id="logoGitHub" class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/jcomte23"
-        role="button">
+      <a id="logoGitHub" class="btn btn-outline-light btn-floating m-1" target="_blank"
+        href="https://github.com/jcomte23" role="button">
         <i class="bi bi-github"></i>
       </a>
     </div>
@@ -184,14 +175,6 @@
       <a class="text-white text-decoration-none" target="_blank" href="https://github.com/jcomte23">Jcomte23</a>
     </div>
   </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
