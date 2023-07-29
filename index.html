@@ -40,8 +40,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous" defer></script>
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
+    defer></script>
   <script src="js/app.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -85,67 +85,106 @@
     </div>
   </header>
 
-  <h2 id="habilidades" class="text-center mt-2">Mis principales Habilidades</h2>
+
+  <h2 id="habilidades" class="text-center mt-2">Tecnologías dominadas</h2>
+
   <section class="content bg-white dark:bg-black">
     <div class="gallery-container">
-      <div class="gallery pt-5">
-        <div class="card mb-4 col-md-4">
-          <div class="card-body">
-            <h4 class="card-title">PHP & Laravel</h4>
-            <p class="card-text">Experto - Lenguaje de programación popular para el desarrollo web backend y un
-              framework de PHP moderno y popular utilizado para el desarrollo de aplicaciones web y APIs.</p>
+      <div class="gallery pt-5 mb-4 ml-2">
+        <div class="card col-md-4">
+          <img src="https://th.bing.com/th/id/OIP.d9NFjzJG1bz5aEsfXjRnAAHaD3?pid=ImgDet&rs=1" alt="HTML/CSS">
+          <div class="card__content bg-dark">
+            <p class="card__title text-white">HTML,CSS y JS</p>
+            <p class="card__description text-white">
+              Bases del desarrollo web. HTML para estructura, CSS para diseño y JS para interactividad. Juntos crean
+              sitios modernos y atractivos. Esenciales para desarrolladores web.
+            </p>
           </div>
         </div>
-        <div class="card mb-4 col-md-4">
-          <div class="card-body">
-            <h4 class="card-title">C#/.NET</h4>
-            <p class="card-text">Intermedio - C# es un lenguaje de programación orientado a objetos de Microsoft para
-              crear aplicaciones en la plataforma .NET. Es popular para aplicaciones de escritorio, web y móviles, así
-              como para videojuegos y soluciones empresariales.</p>
+
+        <div class="card col-md-4">
+          <img src="https://th.bing.com/th/id/OIP.o8I4xgASHyBpLFM2THqu7wHaDn?pid=ImgDet&rs=1" alt="laravel">
+          <div class="card__content bg-slate-700">
+            <p class="card__title text-white"><a href="https://laravel.com/" target="_blank">Laravel</a></p>
+            <p class="card__description text-white">
+              Laravel es un potente framework de código abierto en PHP, con una sintaxis elegante y herramientas que
+              simplifican tareas comunes como manejo de rutas, bases de datos y autenticación, entre otras.
+            </p>
           </div>
         </div>
-        <div class="card mb-4 col-md-4">
-          <div class="card-body">
-            <h4 class="card-title">Unity</h4>
-            <p class="card-text">Intermedio - Motor de videojuegos popular para el desarrollo de juegos en 2D y 3D en
-              múltiples plataformas.</p>
+
+        <div class="card col-md-4">
+          <img src="https://cdn.neow.in/news/images/uploaded/2020/11/1605027417_microsoft_net.jpg" alt=".net">
+          <div class="card__content bg-purple-700">
+            <p class="card__title text-white"><a href="https://dotnet.microsoft.com/es-es/" target="_blank">.NET</a></p>
+            <p class="card__description text-white">
+              Plataforma de desarrollo de Microsoft. Crea aplicaciones web, de escritorio y móviles. Soporta varios
+              lenguajes y ofrece biblioteca de clases. Facilita desarrollo eficiente y seguro.
+            </p>
           </div>
         </div>
-        <div class="card mb-4 col-md-4">
-          <div class="card-body">
-            <h4 class="card-title">MySQL</h4>
-            <p class="card-text">Experto - Motor de base de datos relacional de código abierto ampliamente utilizado
-              en aplicaciones web y empresariales de mediana y gran escala.</p>
+
+        <div class="card col-md-4">
+          <img src="https://gameworldobserver.com/wp-content/uploads/2021/08/unity-consoles.jpg" alt="Unity">
+          <div class="card__content bg-black">
+            <p class="card__title text-white"><a href="https://unity.com/es/download" target="_blank">Unity</a></p>
+            <p class="card__description text-white">
+              Motor de videojuegos multiplataforma para todo tipo de proyectos. Interfaz amigable, potente editor y
+              recursos amplios. Popular y versátil en la industria.
+            </p>
           </div>
         </div>
-        <div class="card mb-4 col-md-4">
-          <div class="card-body ">
-            <h4 class="card-title">SQL Server</h4>
-            <p class="card-text">Intermedio - Motor de base de datos relacional desarrollado por Microsoft. Es
+
+        <div class="card col-md-4">
+          <img src="https://www.blograffo.net/wp-content/uploads/2021/10/mysql-logo.jpg" alt="MySQL">
+          <div class="card__content bg-sky-800">
+            <p class="card__title text-white"><a href="https://www.mysql.com/" target="_blank">MySQL</a></p>
+            <p class="card__description text-white">
+              Motor de base de datos relacional de código abierto ampliamente utilizado
+              en aplicaciones web y empresariales de mediana y gran escala.
+            </p>
+          </div>
+        </div>
+
+        <div class="card col-md-4">
+          <img
+            src="https://i0.wp.com/download.zone/wp-content/uploads/2019/07/sql-server-2017-logo.png?resize=696%2C379&ssl=1"
+            alt="SqlServer">
+          <div class="card__content bg-blue-600">
+            <p class="card__title text-white"><a href="https://www.microsoft.com/es-es/sql-server/sql-server-downloads"
+                target="_blank">SqlServer</a></p>
+            <p class="card__description text-white">
+              Motor de base de datos relacional desarrollado por Microsoft. Es
               ampliamente utilizado en empresas para el manejo de grandes volúmenes de datos y el soporte de
-              aplicaciones empresariales.</p>
+              aplicaciones empresariales.
+            </p>
           </div>
         </div>
-        <div class="card mb-4 col-md-4">
-          <div class="card-body ">
-            <h4 class="card-title">Oracle</h4>
-            <p class="card-text">Intermedio - Motor de base de datos relacional desarrollado por Oracle Corporation.
-              Es utilizado en empresas para el manejo de grandes volúmenes de datos y el soporte de aplicaciones
-              empresariales.</p>
+
+        <div class="card col-md-4">
+          <img src="https://images.velog.io/images/gjdbqls25/post/fdb038ee-a04c-44ca-b361-804076035b46/image.png"
+            alt="nodejs">
+          <div class="card__content bg-green-800">
+            <p class="card__title text-white"><a href="https://nodejs.org/es" target="_blank">Node Js</a></p>
+            <p class="card__description text-white">
+              Entorno de tiempo de ejecución de JavaScript fuera del navegador. Ideal para crear servidores web y
+              aplicaciones en tiempo real. Enfoque no bloqueante y escalabilidad. Amplio ecosistema de módulos (npm).
+            </p>
           </div>
         </div>
-        <div class="card mb-4 col-md-6">
-          <div class="card-body">
-            <h4 class="card-title">HTML/CSS</h4>
-            <p class="card-text">Avanzado - Lenguajes utilizados para el desarrollo web front-end.</p>
+
+        <div class="card col-md-4">
+          <img src="https://cdn.devdojo.com/posts/images/June2020/what-is-livewire4.jpg?auto=format&q=70&w=1280"
+            alt="Livewire">
+          <div class="card__content bg-pink-500">
+            <p class="card__title text-white"><a href="https://laravel-livewire.com/" target="_blank">Livewire</a></p>
+            <p class="card__description text-white">
+              Framework de desarrollo web para Laravel. Crea interfaces interactivas con solo PHP, sin JavaScript.
+              Facilita la construcción de aplicaciones modernas y atractivas.
+            </p>
           </div>
         </div>
-        <div class="card mb-4 col-md-6">
-          <div class="card-body">
-            <h4 class="card-title">JavaScript</h4>
-            <p class="card-text">Intermedio - Lenguaje de programación para el desarrollo web front-end y backend.</p>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
