@@ -45,7 +45,10 @@
 
 body{
     background-color: var(--black-background) !important;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
 
 
 

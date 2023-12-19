@@ -2,6 +2,11 @@
 
 /* Estilos para tablets y smartphones en modo retrato */
 @media screen and (min-width: 100px) and (max-width: 480px) {
+    body{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
     .nav{
         flex-direction: column;
         justify-content: center;
