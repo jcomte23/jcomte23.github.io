@@ -43,7 +43,9 @@
     border: 1px solid yellow;
 }
 
-.nav{
-    background-color: var(--black-background);
+body{
+    background-color: var(--black-background) !important;
 }
+
+
 
