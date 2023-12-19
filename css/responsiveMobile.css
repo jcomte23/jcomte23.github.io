@@ -1,0 +1,11 @@
+@import url("./app.css");
+
+/* Estilos para tablets y smartphones en modo retrato */
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .nav{
+        border: 5px solid brown;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
