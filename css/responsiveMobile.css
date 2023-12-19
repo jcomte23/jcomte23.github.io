@@ -1,7 +1,7 @@
 @import url("./app.css");
 
 /* Estilos para tablets y smartphones en modo retrato */
-@media screen and (min-width: 100px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 480px) {
     .nav{
         flex-direction: column;
         justify-content: center;
