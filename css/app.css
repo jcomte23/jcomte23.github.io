@@ -48,12 +48,9 @@ body {
     text-transform: capitalize;
 }
 
-.aside .logo a{
-    color: var(--text-black-900);
-    font-weight: 700;
-    padding: 15px 20px;
-    font-size: 2rem;
-    letter-spacing: 5px;
+.aside .logo img{
+    width: 120px;
+    height: auto;
 }
 
 ul{
