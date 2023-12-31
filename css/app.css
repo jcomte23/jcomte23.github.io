@@ -12,7 +12,7 @@
     padding: 0;
     /* quitar contorno predeterminado de algunos elementos */
     outline: 0;
-    text-decoration: none !important;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
