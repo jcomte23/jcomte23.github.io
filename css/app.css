@@ -1,4 +1,6 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap'); */
+
 
 :root {
     --bg-black-900: #f2f2fc;
@@ -13,7 +15,7 @@
     padding: 0;
     /* quitar contorno predeterminado de algunos elementos */
     outline: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     box-sizing: border-box;
 }
 
@@ -24,18 +26,34 @@
 
 body {
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
     /* altura entre lineaas */
-    line-height: 1.5%;
+    /* line-height: 1.5%; */
 }
 
 .aside{
     width: 270px;
     height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
     top: 0;
     z-index: 10;
+}
+
+.aside .logo{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+ul{
+    list-style: none;
 }
 
 .section{
