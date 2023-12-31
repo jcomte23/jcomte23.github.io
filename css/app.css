@@ -1,41 +1,53 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+
 * {
     margin: 0;
     padding: 0;
+    /* quitar contorno predeterminado de algunos elementos */
+    outline: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
-:root {
-    --bg-black-900:#f2f2fc;
-    --bg-black-100:#fdf9ff;
-    --bg-black-50:#e8dfec;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
+::before,
+::after {
+    box-sizing: border-box;
+}
 
+body {
+    font-size: 1rem;
+    /* altura entre lineaas */
+    line-height: 1.5%;
+}
 
+.aside{
+    width: 270px;
+    height: 100%;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
 
-    --blue: #3490dc;
-    --indigo: #6574cd;
-    --purple: #5517c1;
-    --pink: #f66d9b;
-    --red: #e3342f;
-    --orange: #f6993f;
-    --yellow: #ffed4a;
-    --green: #6d9165;
-    --teal: #4dc0b5;
-    --cyan: #00afff;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #3490dc;
-    --secondary: #6c757d;
-    --success: #6d9165;
-    --info: #00afff;
-    --warning: #ffed4a;
-    --danger: #e3342f;
-    --light: #f8f9fa;
-    --dark: #343a40;
+.section{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
 }
 
 .uno {
@@ -49,4 +61,3 @@
 .tres {
     border: 1px solid yellow;
 }
-
