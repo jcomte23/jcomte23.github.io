@@ -6,8 +6,10 @@
     box-sizing: border-box;
 }
 
-:root{ 
-    --black-background: #0F1624;
+:root {
+
+
+
     --blue: #3490dc;
     --indigo: #6574cd;
     --purple: #5517c1;
@@ -31,24 +33,15 @@
     --dark: #343a40;
 }
 
-.uno{
+.uno {
     border: 1px solid red;
 }
 
-.dos{
+.dos {
     border: 1px solid blue;
 }
 
-.tres{
+.tres {
     border: 1px solid yellow;
 }
-
-body{
-    background-color: var(--black-background) !important;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-
-
 
