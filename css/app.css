@@ -4,6 +4,7 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
+    --skin-color: #3365dd;
 }
 
 * {
@@ -24,10 +25,10 @@ body {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     /* altura entre lineaas */
-    /* line-height: 1.5%; */
+    line-height: 1.5%;
 }
 
-.aside{
+.aside {
     width: 270px;
     height: 100%;
     padding: 30px;
@@ -35,29 +36,56 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--bg-black-100);
+    border-right: 1px solid var(--bg-black-50);
     position: fixed;
     left: 0;
     top: 0;
     z-index: 10;
 }
 
-.aside .logo{
+.aside .logo {
     position: absolute;
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
 }
 
-.aside .logo img{
-    width: 120px;
+.aside .logo img {
+    width: 110px;
     height: auto;
 }
 
-ul{
+.aside .nav {
+    margin-top: 100px;
+}
+
+ul {
     list-style: none;
 }
 
-.section{
+.aside .nav li {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .nav li a {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+
+.aside .nav li a.active {
+    color: var(--skin-color);
+}
+
+.aside .nav li a i {
+    margin-right: 1rem;
+}
+
+.section {
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
