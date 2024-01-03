@@ -25,8 +25,14 @@ body {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     /* altura entre lineaas */
-    line-height: 1.5%;
+    /* line-height: 1.5%; */
 }
+
+/* 
+###################
+BARRA DE NAVEGACION
+################### 
+*/
 
 .aside {
     width: 270px;
@@ -85,6 +91,11 @@ ul {
     margin-right: 1rem;
 }
 
+/* 
+####################
+CONTENEDOR PRINCIPAL
+#################### 
+*/
 .section {
     background: var(--bg-black-900);
     min-height: 100vh;
