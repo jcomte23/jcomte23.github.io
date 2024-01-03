@@ -1,4 +1,5 @@
 :root {
+    --color-white: #ffffff;
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
     --bg-black-50: #e8dfec;
@@ -16,9 +17,25 @@
     box-sizing: border-box;
 }
 
-.padd-15{
+.padd-15 {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: var(--color-white);
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 40px;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .uno {
@@ -113,26 +130,25 @@ ul {
 CONTENEDOR PRINCIPAL
 #################### 
 */
+.main-content {
+    padding-left: 270px;
+}
+
 .section {
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    position: fixed;
     padding: 0 30px;
-    left: 270px;
-    top: 0;
-    right: 0;
-    z-index: 0;
     opacity: 1;
 }
 
-.container{
+.container {
     max-width: 1100px;
     width: 100%;
     margin: auto;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -140,24 +156,78 @@ CONTENEDOR PRINCIPAL
     position: relative;
 }
 
-.home{
+.home {
     min-height: 100vh;
     display: flex;
     color: var(--text-black-900);
 }
 
-.home .home-info{
+.home .home-info {
     /* flex-grow: 0 */
     /* flex-shrink: 0 */
     /* flex-basis: 60% */
     flex: 0 0 60%;
     max-width: 60%;
 }
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+
+h3.my-profession {
+    font-size: 30px;
+    margin-top: 15px 0;
+    margin-bottom: 15px;
+}
+
+.typing {
+    color: var(--skin-color);
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+
 .home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
+    text-align: center;
+    position: relative;
 }
 
-.home .home-img img{
+.home-img::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 20px;
+    bottom: -40px;
+}
+
+.home-img::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: -20px;
+    top: -40px;
+}
+
+.home .home-img img {
     height: 400px;
+    margin: auto;
+    border-radius: 5px;
 }
