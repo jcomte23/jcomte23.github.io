@@ -1,0 +1,67 @@
+# Nombre del workflow que aparecerá en la pestaña Actions de GitHub
+name: Deploy Vite to GitHub Pages
+
+# Eventos que disparan este workflow
+on:
+  # Se ejecuta automáticamente cuando hay un push a la rama "main"
+  push:
+    branches: ["main"]
+
+  # Permite ejecutar el workflow manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+# Configuración de permisos para el token GITHUB_TOKEN
+permissions:
+  # Permite leer el contenido del repositorio
+  contents: read
+  # Permite escribir en GitHub Pages para desplegar el sitio
+  pages: write
+  # Permite usar un token para autenticar el despliegue en un entorno seguro
+  id-token: write
+
+# Control de concurrencia para evitar conflictos entre despliegues simultáneos
+concurrency:
+  group: "pages"               # Agrupa trabajos relacionados con GitHub Pages
+  cancel-in-progress: false    # No cancela trabajos en curso si hay un nuevo commit
+
+# Definición de los trabajos del workflow
+jobs:
+  build-and-deploy:
+    # Especifica que este trabajo usa el entorno de despliegue "github-pages"
+    environment:
+      name: github-pages       # Nombre del entorno
+      url: ${{ steps.deployment.outputs.page_url }} # URL del sitio desplegado
+
+    # Define el sistema operativo del runner (máquina virtual)
+    runs-on: ubuntu-latest      # Usa la última versión de Ubuntu
+
+    # Lista de pasos a ejecutar
+    steps:
+      # Paso 1: Clonar el repositorio en el runner
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Acción para clonar el repositorio
+
+      # Paso 2: Configurar Node.js en el runner
+      - name: Setup Node.js
+        uses: actions/setup-node@v3  # Acción para configurar Node.js
+        with:
+          node-version: 22          # Versión de Node.js a instalar
+
+      # Paso 3: Instalar las dependencias del proyecto
+      - name: Install dependencies
+        run: npm install            # Comando para instalar las dependencias
+
+      # Paso 4: Construir el proyecto con Vite
+      - name: Build project
+        run: npm run build          # Comando para generar los archivos estáticos
+
+      # Paso 5: Subir los archivos generados como un artefacto
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3  # Acción para subir el artefacto
+        with:
+          path: dist                # Carpeta que contiene los archivos estáticos
+
+      # Paso 6: Desplegar en GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment              # ID del paso para referenciar su salida
+        uses: actions/deploy-pages@v4  # Acción para desplegar en GitHub Pages
