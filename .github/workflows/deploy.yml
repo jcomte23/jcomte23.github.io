@@ -7,7 +7,7 @@ on:
   push:
     branches: ["main"]
   pull_request:
-    branches: ["main" , "develop"]
+    branches: ["main"]
 
   # Permite ejecutar el workflow manualmente desde la pestaña Actions
   workflow_dispatch:
