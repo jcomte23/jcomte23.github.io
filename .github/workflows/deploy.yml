@@ -5,9 +5,11 @@ name: Deploy Vite to GitHub Pages
 on:
   # Se ejecuta automáticamente cuando hay un push a la rama "main"
   push:
-    branches: ["main"]
+    branches:
+      - main
   pull_request:
-    branches: ["main"]
+    branches:
+      - main
 
   # Permite ejecutar el workflow manualmente desde la pestaña Actions
   workflow_dispatch:
