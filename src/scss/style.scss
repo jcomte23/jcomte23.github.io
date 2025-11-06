@@ -290,6 +290,22 @@ body {
   box-shadow: 0 24px 40px rgba(12, 12, 12, 0.06);
 }
 
+
+.credit-inline {
+  font-size: 0.85rem;
+  color: rgba(30,30,30,0.7);
+  margin-left: 8px;
+}
+
+.credit-inline a {
+  color: var(--blue-500);
+  text-decoration: none;
+  font-weight: 500;
+}
+.credit-inline a:hover {
+  color: var(--blue-300);
+}
+
 .card-media {
   width: 100%;
   height: 160px;
