@@ -278,6 +278,13 @@ body {
   overflow: hidden;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 24px 40px rgba(12, 12, 12, 0.06);
@@ -374,6 +381,29 @@ body {
   background: rgba(231,76,60,0.1);
   color: #b82e2e;
   border-color: rgba(231,76,60,0.25);
+}
+
+.card-footer {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(30,30,30,0.06);
+}
+
+.credit {
+  font-size: 0.88rem;
+  color: rgba(30,30,30,0.55);
+  margin: 0;
+}
+
+.credit a {
+  color: var(--blue-500);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.credit a:hover {
+  color: var(--blue-300);
 }
 
 /* Services */
