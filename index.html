@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -43,283 +43,249 @@
     <meta name="twitter:url" content="https://jcomte23.github.io">
 
     <!-- Bootstrap CSS -->
-    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#ffffff">
-    <title>Jcomte23 - Backend Developer Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <title>Javier Cómbita | Desarrollador Fullstack & Arquitecto de Software</title>
 </head>
 
 <body>
-    <header class="navbar navbar-expand-md navbar-light">
-        <div class="container">
-            <!-- Branding -->
-            <a href="/" class="navbar-brand text-primary fw-bold fs-2">
-                Jcomte23
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#inicio">
+                <!-- Replace with your SVG logo in /assets/logo.svg -->
+                <img src="public/logo.png" alt="Jcomtec logo" class="logo" />
+                <span class="brand-text">Jcomtec</span>
             </a>
 
-            <!-- Toggle Button for Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <nav class="nav" id="nav">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+            </nav>
 
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link text-primary text-capitalize">skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#technical-skills" class="nav-link text-primary text-capitalize">technical skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link text-primary text-capitalize">projects</a>
-                    </li>
-                </ul>
-            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
-    <main class="container">
-        <!-- profile -->
-        <section class="row flex-lg-row-reverse justify-content-center align-items-center g-5 pb-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="public/images/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid"
-                    alt="Bootstrap Themes" loading="lazy">
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 custom-heading">Javier Cómbita Téllez</h1>
-                <p class="lead custom-heading">Hi, I'm Javier Cómbita Téllez, a passionate backend developer
-                    specializing in
-                    .NET, C#, and
-                    scalable
-                    architectures.
-                    I have experience in leading development teams, mentoring junior talent, and creating technical
-                    e-learning
-                    content.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a class="btn btn-primary btn-lg px-4 me-md-2 text-capitalize"
-                        href="https://www.linkedin.com/in/javier-c%C3%B3mbita-t%C3%A9llez-4b4aa3258/" target="_blank"
-                        role="button">linkedIn<i class="bi bi-linkedin ms-1"></i></a>
-                    <a class="btn btn-outline-secondary btn-lg px-4" href="public/documents/prueba_documento.pdf"
-                        target="_blank" role="button">Download CV<i class="bi bi-download ms-1"></i></a>
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">Hola, soy</p>
+                    <h1 class="hero-title">Javier Cómbita Téllez</h1>
+                    <p class="hero-sub">Desarrollo soluciones web modernas — <strong>código con pasión, impacto
+                            real</strong>.</p>
+
+                    <div class="hero-ctas">
+                        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+                        <a class="btn ghost" href="#servicios">Servicios</a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <span>Disponibilidad: <strong>Proyectos freelance</strong></span>
+                    </div>
+                </div>
+
+                <div class="hero-media" aria-hidden="true">
+                    <!-- Put a personal photo or illustration named hero.jpg in assets -->
+                    <div class="media-card">
+                        <img src="public/images/photo3.png" alt="Foto de Javier Cómbita" />
+                        <div class="media-accent"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- skills -->
-        <section class="row gx-10 gy-7 mt-4 row-gap-5" id="skills">
-            <article class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
-                <span class="f-w-8 d-block text-primary text-center">
-                    <svg class="w-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                        <polyline points="2 17 12 22 22 17"></polyline>
-                        <polyline opacity=".4" points="2 12 12 17 22 12"></polyline>
-                    </svg>
-                </span>
-                <p class="fw-medium mb-1 mt-3 fs-5">
-                    Fullstack Applications
-                </p>
-                <span class="text-muted fs-7">
-                    Development of complete applications, from user interfaces to server-side logic and databases,
-                    integrating cutting-edge technologies.
-                </span>
-            </article>
-
-            <article class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
-                <span class="f-w-8 d-block text-primary text-center">
-                    <svg class="w-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                        <rect opacity=".3" x="9" y="9" width="6" height="6"></rect>
-                        <line x1="9" y1="1" x2="9" y2="4"></line>
-                        <line x1="15" y1="1" x2="15" y2="4"></line>
-                        <line x1="9" y1="20" x2="9" y2="23"></line>
-                        <line x1="15" y1="20" x2="15" y2="23"></line>
-                        <line x1="20" y1="9" x2="23" y2="9"></line>
-                        <line x1="20" y1="14" x2="23" y2="14"></line>
-                        <line x1="1" y1="9" x2="4" y2="9"></line>
-                        <line x1="1" y1="14" x2="4" y2="14"></line>
-                    </svg>
-                </span>
-                <p class="fw-medium mb-1 mt-3 fs-5">
-                    Optimization and Continuous Improvement
-                </p>
-                <span class="text-muted fs-7">
-                    Performance optimization in applications, code
-                    refactoring, and application of best practices to keep code clean, scalable, and
-                    maintainable.
-                </span>
-            </article>
-
-            <article class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
-                <span class="f-w-8 d-block text-primary text-center">
-                    <svg class="w-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="18" cy="18" r="3"></circle>
-                        <circle cx="6" cy="6" r="3"></circle>
-                        <path opacity=".4" d="M13 6h3a2 2 0 0 1 2 2v7"></path>
-                        <line opacity=".4" x1="6" y1="9" x2="6" y2="21"></line>
-                    </svg>
-                </span>
-                <p class="fw-medium mb-1 mt-3 fs-5">
-                    Version Control and Azure DevOps
-                </p>
-                <span class="text-muted fs-7">
-                    Impeccable management of Azure DevOps for project
-                    tracking, version control, pipeline automation, and agile sprint management.
-                </span>
-            </article>
-
-            <article class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
-                <span class="f-w-8 d-block text-primary text-center">
-                    <svg class="w-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path opacity=".4" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path opacity=".4" d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                </span>
-                <p class="fw-medium mb-1 mt-3 fs-5">
-                    Soft Skills and Collaborative Work
-                </p>
-                <span class="text-muted fs-7">
-                    Strong communication skills, fostering positive work
-                    environments, and collaborating effectively with multidisciplinary teams, even in fully
-                    remote settings. Adaptable, proactive, and problem-solving oriented.
-                </span>
-            </article>
-
-            <article class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
-                <span class="f-w-8 d-block text-primary text-center">
-                    <svg class="w-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path>
-                        <polyline opacity=".4" points="13 11 9 17 15 17 11 23"></polyline>
-                    </svg>
-                </span>
-                <p class="fw-medium mb-1 mt-3 fs-5">
-                    DevOps and CI/CD
-                </p>
-                <span class="text-muted fs-7">
-                    Implementation of continuous integration and continuous
-                    deployment (CI/CD) processes with Azure DevOps, version control using Git, and environment
-                    management.
-                </span>
-            </article>
-
-            <article class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-start">
-                <span class="f-w-8 d-block text-primary text-center">
-                    <svg class="w-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle opacity=".4" cx="12" cy="12" r="2"></circle>
-                        <path
-                            d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14">
-                        </path>
-                    </svg>
-                </span>
-                <p class="fw-medium mb-1 mt-3 fs-5">
-                    Backend Development
-                </p>
-                <span class="text-muted fs-7">
-                    Design and development of robust, secure, and efficient
-                    APIs, managing databases and business logic for web and mobile applications.
-                </span>
-            </article>
-        </section>
-
-        <!-- Programming Languages -->
-        <h2 class="text-center mb-4 mt-4" id="technical-skills">Programming Languages</h2>
-        <section class="row g-4 py-5 row-cols-1 row-cols-lg-4">
-            <!-- Python -->
-            <article class="col feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="public/logos/python.svg" alt="Logo python">
-            </article>
-
-            <!-- C# -->
-            <article class="col feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="public/logos/c-sharp.svg" alt="Logo C#">
-            </article>
-
-            <!-- JavaScript -->
-            <article class="col feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="public/logos/javascript.svg" alt="Logo javascript">
-            </article>
-
-            <!-- PHP -->
-            <article class="col feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="public/logos/php.svg" alt="Logo php">
-            </article>
-        </section>
-
-        <!-- Databases Section -->
-        <h2 class="text-start mb-4 text-capitalize text-center">databases</h2>
-        <section class="row g-4 py-5 row-cols-1 row-cols-lg-4" id="databases">
-            <!-- MySQL -->
-            <article class="col feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="public/logos/mysql.svg" alt="Logo mysql" width="100%">
-            </article>
-
-            <!-- PostgreSQL -->
-            <article class="col feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="public/logos/postgresql.svg" alt="Logo postgresql" width="100%">
-            </article>
-
-            <!-- MongoDB -->
-            <article class="col feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="public/logos/mongodb.svg" alt="Logo mongodb">
-            </article>
-
-            <!-- SQLite -->
-            <article class="col feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="public/logos/sqlite.svg" alt="Logo sqlite" width="100%">
-            </article>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-5">
-            <h2>Projects</h2>
-
-            <section class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">CRUD de Usuarios con .NET y Razor Pages</h2>
-                    <p class="lead">
-                        Aplicación web desarrollada con .NET y Razor Pages para gestionar usuarios en MySQL mediante un
-                        CRUD
-                        simple.
-                        Incluye notificaciones Toast y sigue buenas prácticas de desarrollo.
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Proyectos destacados</h2>
+                    <p class="muted">Una selección breve de trabajos recientes — interfaces limpias y código mantenible.
                     </p>
-                    <ul>
-                        <li><strong>Framework:</strong> ASP.NET con Razor Pages</li>
-                        <li><strong>Base de datos:</strong> MySQL</li>
-                        <li><strong>Alertas:</strong> Notificaciones con Toast</li>
-                        <li><strong>Buenas prácticas:</strong> Código organizado y estructurado</li>
-                    </ul>
-                    <a href="https://github.com/jcomte23/CRUD-MVC-users" class="btn btn-primary" target="_blank">Ver
-                        Repositorio</a>
                 </div>
-                <div class="col-md-5 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor"
-                        class="bi bi-people-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
-                    </svg>
+
+                <div class="cards-grid" id="projectsGrid">
+                    <!-- Example project cards (replace images/text with yours) -->
+                    <article class="card project-card ">
+                        <img src="public/images/ForzaSpecialsWeldings.jpg" alt="Proyecto 3" class="card-media" />
+                        <div class="card-body">
+                            <div class="tags">
+                                <span class="tag tag--empresa">Proyecto empresarial</span>
+                                <span class="tag tag--privado">Código privado</span>
+                            </div>
+                            <h3>Forza Specials Weldings</h3>
+                            <p class="muted">Proyecto en desarrollo, del cual soy responsable de todo el ciclo de vida
+                                del software, aplicando un enfoque fullstack con buenas prácticas y arquitectura
+                                hexagonal.</p>
+                            <div class="card-actions">
+                                <a href="#" class="btn ghost small actual">Plataforma Web (En construccion)</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <img src="https://play-lh.googleusercontent.com/Xj_OcCMJXlkDNvK2pvZAM9A1oD5LsyfKrKLZiPQQxcGx6dDTrz90dxNT0CuLAuLNXmQ"
+                            alt="Proyecto 2" class="card-media" />
+                        <div class="card-body">
+                            <div class="tags">
+                                <span class="tag tag--empresa">Proyecto empresarial</span>
+                                <span class="tag tag--privado">Código privado</span>
+                            </div>
+                            <h3>Mesadoko <span class="credit-inline">| Desarrollado para <a
+                                        href="https://disruptiveintech.com/" target="_blank">Disruptive</a></span></h3>
+                            <p class="muted">Implementé el sistema de autenticación y gestión de seguridad de la app
+                                Mesadoko, integrando lógica backend y control de acceso en tiempo real durante mi
+                                colaboración con Disruptive</p>
+
+                            <div class="card-actions">
+                                <!-- Botones según el caso -->
+                                <a href="https://youtube.com/shorts/XbyBGqkd_FE?si=zcsMFRdsAOA6VvsR"
+                                    class="btn ghost small" target="_blank">Ver demo</a>
+                                <a href="https://mesadoko.com/index-es.html" target="_blank"
+                                    class="btn ghost small">Sitio web</a>
+
+                                <div class="store-links">
+                                    <a href="https://apps.apple.com/co/app/mesadoko/id6459267121?l=en-GB"
+                                        target="_blank" aria-label="Descargar en App Store" class="store-icon">
+                                        <!-- Apple Store SVG -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="#1e1e1e"
+                                                d="M318.7 268.7c-.2-39.1 17-68.8 52-90.6-19.6-28.6-49.1-44.3-90-47.1-37.8-3-78.2 22.1-92.8 22.1-15.2 0-50.2-21.5-77.6-21.5C62 131.7 0 174.4 0 264.6c0 60.4 22.8 125.9 50.8 167.3 20.5 30.4 44.9 64.5 77.2 63.3 30.7-1.2 42.3-20 79.3-20 37 0 47.1 20 77.8 19.5 31.4-.5 51.2-31.1 71.2-61.9 22.2-33.3 31.3-65.5 31.4-67.2-.6-.3-60.1-23.2-60.2-96.9zM252 89.2c17.2-20.8 28.7-49.7 25.5-78.7-24.6 1-54.4 16.4-72.1 37.2-15.8 18.3-29.5 47.6-25.8 75.7 27.6 2.1 55.2-14.1 72.4-34.2z" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="https://play.google.com/store/apps/details?id=com.mesadavisenterprises.mesadokoapp"
+                                        target="_blank" aria-label="Descargar en Google Play" class="store-icon">
+                                        <!-- Play Store SVG -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="#3bccff"
+                                                d="M325.3 234.3L104.5 13.5C96.6 5.7 85.4 0 73.4 0 49.1 0 30 20.5 30 45.6v420.9c0 25.1 19.1 45.6 43.4 45.6 12 0 23.2-5.7 31.1-13.5l220.8-220.8c4.6-4.6 4.6-12.1 0-16.7z" />
+                                            <path fill="#00a1f1"
+                                                d="M358.3 269.3L305.6 256l52.7-13.3 104.6-58.4c13.8-7.7 13.8-27.5 0-35.2l-104.6-58.4L305.6 77l52.7-13.3 126.1 70.3c25.2 14.1 25.2 52.8 0 66.9l-126.1 70.4z" />
+                                            <path fill="#0094d2"
+                                                d="M305.6 256l52.7 13.3 104.6 58.4c13.8 7.7 13.8 27.5 0 35.2L358.3 421l-52.7 13.3L325.3 277c4.6-4.6 4.6-12.1 0-16.7z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <article class="card project-card">
+                        <img src="public/images/hogenco-logo.jpg" alt="Proyecto 1" class="card-media" />
+                        <div class="card-body">
+                            <div class="tags">
+                                <span class="tag tag--personal">Proyecto freelance</span>
+                                <span class="tag tag--publico">Código publico</span>
+                            </div>
+                            <h3>Hogenco</h3>
+                            <p class="muted">Desarrollado junto a dos compañeros para demostrar nuestras habilidades
+                                técnicas. Me enfoqué en el frontend, construyendo la interfaz completa con HTML, CSS y
+                                JavaScript.</p>
+                            <div class="card-actions">
+                                <a href="https://youtu.be/ED_bFn4uKWA?si=6PuBkzIjg-7ekoxa" target="_blank"
+                                    class="btn ghost small">Ver demo</a>
+                                <a href="https://github.com/jcomte23/HOGENCO" target="_blank"
+                                    class="btn ghost small">Código</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Servicios</h2>
+                    <p class="muted">Soluciones técnicas orientadas a resultados — diseño, desarrollo y despliegue
+                        profesional.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <div class="icon">🧱</div>
+                        <h3>Desarrollo y Arquitectura de Software</h3>
+                        <p class="muted">
+                            Diseño e implementación de aplicaciones escalables aplicando principios SOLID, arquitectura
+                            limpia y buenas prácticas de ingeniería.
+                        </p>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="icon">⚙️</div>
+                        <h3>Backend y APIs</h3>
+                        <p class="muted">
+                            Construcción de APIs seguras, modulares y eficientes con integración a bases de datos como
+                            MySQL, PostgreSQL o SQL Server.
+                        </p>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="icon">💻</div>
+                        <h3>Frontend y Aplicaciones Web</h3>
+                        <p class="muted">
+                            Desarrollo de interfaces modernas en HTML, CSS y JavaScript, con soporte para frameworks
+                            como React, Vue o Angular.
+                        </p>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="icon">🚀</div>
+                        <h3>Automatización y DevOps</h3>
+                        <p class="muted">
+                            Creación de pipelines CI/CD, despliegues con Docker y orquestación en Azure para optimizar
+                            procesos de entrega continua.
+                        </p>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="icon">🧭</div>
+                        <h3>Consultoría Técnica</h3>
+                        <p class="muted">
+                            Asesoría en arquitectura, metodologías ágiles, estructuración de proyectos y liderazgo
+                            técnico basado en Scrum y Agile.
+                        </p>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="icon">🔍</div>
+                        <h3>Optimización y Refactorización</h3>
+                        <p class="muted">
+                            Auditoría y mejora de código existente para aumentar rendimiento, escalabilidad y
+                            mantenibilidad de sistemas en producción.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer class="py-4">
-        <div class="container text-center">
-            <p>© 2025 Javier Cómbita Téllez. All rights reserved.</p>
-            <p>
-                Connect with me on:
-                <a href="https://www.linkedin.com/in/javier-c%C3%B3mbita-t%C3%A9llez-4b4aa3258/" target="_blank"
-                    class="text-decoration-none">LinkedIn</a> |
-                <a href="https://github.com/jcomte23" target="_blank" class="text-decoration-none">GitHub</a>
-            </p>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>Jcomtec</strong>
+                <p class="muted small">Código con pasión, soluciones con impacto</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="mailto:jcomte23@outlook.com">jcomte23@outlook.com</a>
+                <div class="socials">
+                    <!-- update links -->
+                    <a href="https://github.com/jcomte23" target="_blank" aria-label="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/javier-c%C3%B3mbita-t%C3%A9llez-4b4aa3258" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
         </div>
     </footer>
 
