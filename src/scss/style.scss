@@ -269,6 +269,10 @@ body {
   align-items: stretch;
 }
 
+.project-card.hogenco {
+  grid-column: 2; /* Columna del centro en un grid de 3 */
+}
+
 .card {
   background: var(--white);
   border-radius: var(--radius-md);
