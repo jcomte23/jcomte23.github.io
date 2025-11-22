@@ -270,7 +270,8 @@ body {
 }
 
 .project-card.hogenco {
-  grid-column: 2; /* Columna del centro en un grid de 3 */
+  grid-column: 2;
+  /* Columna del centro en un grid de 3 */
 }
 
 .card {
@@ -482,6 +483,7 @@ body {
 
 
 /* Services */
+/* Services */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -493,7 +495,29 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
-  padding: 22px
+  padding: 22px;
+
+  /* Sobreescribir estilos heredados de .card para diferenciación Apple-like */
+  box-shadow: none;
+  /* Elimina la sombra fuerte */
+  border: 1px solid rgba(30, 30, 30, 0.06);
+  /* Añade un borde muy sutil */
+  background: var(--white);
+  transform: none;
+  /* Elimina el transform inicial heredado */
+  transition: box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+}
+
+/* Sobreescribir el efecto hover heredado para hacerlo más sutil */
+.service-card:hover {
+  transform: none;
+  /* Elimina la gran elevación al hacer hover */
+  box-shadow: 0 4px 15px rgba(12, 12, 12, 0.04);
+  /* Sombra sutil de elevación en hover */
+  border-color: rgba(37, 99, 235, 0.3);
+  /* Un toque de color azul en el borde */
+  background: #fcfdff;
+  /* Fondo muy ligeramente más claro al hacer hover */
 }
 
 .service-card .icon {
@@ -502,7 +526,7 @@ body {
   border-radius: 12px;
   border: 1.5px solid transparent;
   background: linear-gradient(white, white) padding-box,
-              linear-gradient(135deg, var(--blue-400), var(--blue-200)) border-box;
+    linear-gradient(135deg, var(--blue-400), var(--blue-200)) border-box;
   box-shadow: 0 8px 24px rgba(96, 165, 250, 0.12);
 }
 
