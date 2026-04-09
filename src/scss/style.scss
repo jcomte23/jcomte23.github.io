@@ -601,6 +601,20 @@ body {
     grid-template-columns: 1fr
   }
 
+  .project-card.hogenco {
+    grid-column: auto;
+  }
+
+  .card-actions {
+    flex-wrap: wrap;
+  }
+
+  .store-links {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
   .services-grid {
     grid-template-columns: 1fr
   }
