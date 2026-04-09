@@ -1,53 +1,60 @@
 import '../scss/style.scss'
-import * as bootstrap from 'bootstrap'
+const nav = document.getElementById('nav')
+const navToggle = document.getElementById('navToggle')
 
-// main.js (ES module — Vite friendly)
-const nav = document.getElementById('nav');
-const navToggle = document.getElementById('navToggle');
+const setNavOpen = (isOpen) => {
+  nav.classList.toggle('is-open', isOpen)
+  navToggle.setAttribute('aria-expanded', String(isOpen))
+  navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú')
+}
 
-navToggle.addEventListener('click', () => {
-  const expanded = nav.getAttribute('data-open') === 'true';
-  nav.setAttribute('data-open', String(!expanded));
-  nav.style.display = expanded ? '' : 'flex';
-  navToggle.setAttribute('aria-expanded', String(!expanded));
-});
+if (nav && navToggle) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.contains('is-open')
+    setNavOpen(!isOpen)
+  })
 
-// Smooth scrolling for internal links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+      setNavOpen(false)
+      navToggle.focus()
+    }
+  })
+}
+
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
   a.addEventListener('click', (e) => {
-    const href = a.getAttribute('href');
-    if (!href || href === '#') return;
-    const target = document.querySelector(href);
+    const href = a.getAttribute('href')
+    if (!href || href === '#') return
+
+    const target = document.querySelector(href)
     if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      // close mobile nav if open
-      if (window.innerWidth < 720 && nav.getAttribute('data-open') === 'true') {
-        nav.setAttribute('data-open', 'false');
-        nav.style.display = '';
-        navToggle.setAttribute('aria-expanded', 'false');
+      e.preventDefault()
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+      if (window.innerWidth < 720 && nav?.classList.contains('is-open')) {
+        setNavOpen(false)
       }
     }
-  });
-});
+  })
+})
 
-// small enhancement: lazy load project images
-document.querySelectorAll('.card-media').forEach(img => {
+document.querySelectorAll('.card-media').forEach((img) => {
   if ('loading' in HTMLImageElement.prototype) {
-    img.setAttribute('loading', 'lazy');
+    img.setAttribute('loading', 'lazy')
   } else {
-    // fallback simple lazy-init
     const io = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const i = entry.target;
-          i.src = i.dataset.src || i.src;
-          io.unobserve(i);
+          const i = entry.target
+          i.src = i.dataset.src || i.src
+          io.unobserve(i)
         }
-      });
-    });
-    img.dataset.src = img.src;
-    img.src = '';
-    io.observe(img);
+      })
+    })
+
+    img.dataset.src = img.src
+    img.src = ''
+    io.observe(img)
   }
-});
+})
