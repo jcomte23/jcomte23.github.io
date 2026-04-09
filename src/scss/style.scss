@@ -280,6 +280,8 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: var(--white);
   border-radius: var(--radius-md);
   padding: 14px;
@@ -288,11 +290,14 @@ body {
   overflow: hidden;
 }
 
+.project-card {
+  height: 100%;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  flex: 1;
 }
 
 .card:hover {
@@ -327,7 +332,8 @@ body {
 }
 
 .card-body {
-  padding: 12px 4px
+  padding: 12px 4px;
+  gap: 10px;
 }
 
 .card h3 {
@@ -337,13 +343,17 @@ body {
 
 .card p.muted {
   color: rgba(30, 30, 30, 0.65);
-  font-size: .95rem
+  font-size: .95rem;
+  margin: 0;
 }
 
 .card-actions {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
-  margin-top: 10px
+  margin-top: auto;
+  padding-top: 6px;
 }
 
 .tags {
